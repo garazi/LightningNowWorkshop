@@ -1,12 +1,12 @@
 # Lightning Now Workshop
 
-##Exercise 5 – Converting a Visualforce page to a Lightning Component
+##Exercise 6 – Building a Quick Prospect Component
 
 ###Exercise Goals
 
-* Use SLDS markup in a Lightning Component
-* Retrieving and displaying data using Controllers
+* Use Base Lightning Components to build a Lightning Component
+* Understanding updating data and handling conflicts
 
-###Step 1 - Create a New Lightning Component
+###Step 1 - Import the Metadata Structure
 
 1. Something goes here...
