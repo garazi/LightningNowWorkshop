@@ -1,13 +1,12 @@
 # Lightning Now Workshop
 
-##Exercise 4 – Creating a Simple Lightning Component
+##Exercise 5 – Converting a Visualforce page to a Lightning Component
 
 ###Exercise Goals
 
-* Build a simple Hello World component
-* Explore basic concepts of Lightning Component markup
-* Understand how to use attributes for data binding
+* Use SLDS markup in a Lightning Component
+* Retrieving and displaying data using Controllers
 
-###Step 1 - Create Hello World
+###Step 1 - Create a New Lightning Component
 
 1. Something goes here...
