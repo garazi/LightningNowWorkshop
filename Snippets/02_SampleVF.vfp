@@ -1,0 +1,21 @@
+<apex:page standardController="Account" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" showHeader="false">
+    <html>
+
+    <head>
+        <!-- Link to custom SLDS -->
+    </head>
+
+    <body class="slds-m-around--medium">
+        <apex:detail relatedList="false" />
+        <apex:pageBlock title="Contacts">
+            <apex:pageBlockTable value="{!Account.contacts}" var="contact">
+                <apex:column value="{!contact.Name}" />
+                <apex:column value="{!contact.Title}" />
+                <apex:column value="{!contact.Phone}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <!-- Script to do style replacement -->
+    </body>
+
+    </html>
+</apex:page>
