@@ -1,11 +1,11 @@
 # Lightning Now Workshop
 
-##Exercise 7 – Building a Business Locator Component
+##Exercise 8 – Building a Sales Process Component
 
 ###Exercise Goals
 
-* Understand how to use Helpers
-* Create component parameters for App Builder
+* Build a service component
+* Explore simplified CRUD transactions with force:recordPreview
 
 ###Step 1 - Build the intial component structure
 
