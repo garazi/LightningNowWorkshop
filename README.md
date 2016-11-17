@@ -1,23 +1,30 @@
 # Lightning Now Workshop
 
-##Exercise 1 – Embedding a Visualforce page in Lightning Experience
+##Exercise 1 – Adding a Visualforce page to Lightning Experience
 
 ###Exercise Goals
 
 * Create a Visualforce page using the Developer Console
-* Add the Visualforce page to a Lightning Experience page using App Builder
+* Enable the Visualforce page in Lightning Experience
 
 ###Step 1 - Create a Visualforce page
 1. Switch to Salesforce Classic.
-2. Go to Accounts and use the Filter to select **All Accounts**.
-3. Choose **United Oil & Gas Corp**.
 2. Launch the Developer Console.
 3. Create a new Visualforce page named **SampleVF**.
-4. Open the 01_SampleVF page and copy the code into your new page.
-5. Save your new page.
-6. In the browser, copy the unique ID for the United Oil & Gas Corp record.
-7. Preview SampleVF in the browser, and add the ID as a URL parameter:
+4. Open [01_SampleVF](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-1/Snippets/01_SampleVF.vfp) and copy the code into your new page.
+5. Save the new page.
 
-		https://YOURORGNAME.na35.visual.force.com/apex/mySampleVF?id=00141000007RgFe
+###Step 2 - Add the page as a Visualforce tab
+1. Click Setup.
+2. In the Quick Find field, type "tab".
+3. Click Create > Tabs.
+4. Click the New button in the Visualforce Tabs section.
+5. Choose **SampleVF** from Visualforce Page select list.
+6. Give the tab a label of "Contact List" and a name of "Contact_List".
+7. Choose an icon for the Tab Style (your choice).
+8. Click Next and Next and then Save.
+9. Refresh the page, then click the tab for your new page.
 
-###Step 2 - Add your Visualforce page to a Lightning page
+###Step 3 - View the Visualforce page in Lightning Experience
+1. Switch to Lightning Experience.
+2. Click your Contact List tab.
