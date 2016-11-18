@@ -51,20 +51,4 @@
 2. Add `oncomplete="init();"` to the `<apex:actionSupport>` tag.
 3. Save the page.
 4. Refresh the custom Contact List page in your org.
-
-###Step 6 - Add SLDS styling to the apex:selectList
-1. Wrap the word "Filter" and the `<apex:selectList>` with:
-
-		<div class="slds-form slds-m-left--large slds-m-bottom--small slds-size--1-of-6"> ... </div>
-		
-2. Wrap the word "Filter" with:
-
-		<label class="slds-form-element__label" for="select-01"> ... </label>
-		
-3. Wrap the `<apex:selectList>` with:
-
-		<div class="slds-select_container"> ... </div>
-		
-4. Add `styleClass="slds-select"` to the `<apex:selectList>` tag.
-5. Save the page and reload the **Contact List** tab in your org.
 		
