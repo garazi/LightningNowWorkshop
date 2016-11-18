@@ -12,16 +12,16 @@ This repo contains all of the necessary source files for the Salesforce Lightnin
 
 ###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-1) - Adding a Visualforce page to Lightning Experience
 
-###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-2) - Adding Salesforce Lighting Design System to a Visualforce page
+###[Exercise 2](https://github.com/garazi/LightningNowWorkshop/tree/exercise-2) - Adding Salesforce Lighting Design System to a Visualforce page
 
-###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-3) - Using Salesforce Lighting Design System markup
+###[Exercise 3](https://github.com/garazi/LightningNowWorkshop/tree/exercise-3) - Using Salesforce Lighting Design System markup
 
-###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-4) - Creating a Lightning Component
+###[Exercise 4](https://github.com/garazi/LightningNowWorkshop/tree/exercise-4) - Creating a Lightning Component
 
-###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-5) - Converting a Visualforce page to a Lightning Component
+###[Exercise 5](https://github.com/garazi/LightningNowWorkshop/tree/exercise-5) - Converting a Visualforce page to a Lightning Component
 
-###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-6) - Building a Quick Prospect component
+###[Exercise 6](https://github.com/garazi/LightningNowWorkshop/tree/exercise-6) - Building a Quick Prospect component
 
-###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-7) - Making a Lightning Component Context-aware
+###[Exercise 7](https://github.com/garazi/LightningNowWorkshop/tree/exercise-7) - Making a Lightning Component Context-aware
 
-###[Exercise 1](https://github.com/garazi/LightningNowWorkshop/tree/exercise-8) - Leveraging Lightning Data Services in a Lightning Component
+###[Exercise 8](https://github.com/garazi/LightningNowWorkshop/tree/exercise-8) - Leveraging Lightning Data Services in a Lightning Component
