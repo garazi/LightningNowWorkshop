@@ -1,12 +1,12 @@
 # Lightning Now Workshop
 
-##Exercise 7 – Building a Business Locator Component
+##Exercise 7 – Building a Quick Prospect Component
 
 ###Exercise Goals
 
-* Understand how to use Helpers
-* Create component parameters for App Builder
+* Use Base Lightning Components to build a Lightning Component
+* Understanding updating data and handling conflicts
 
-###Step 1 - Build the intial component structure
+###Step 1 - Import the Metadata Structure
 
 1. Something goes here...
