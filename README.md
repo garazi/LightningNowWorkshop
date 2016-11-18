@@ -49,6 +49,7 @@
 		<script src="{!URLFOR($Resource.vflex)}"></script>
 
 2. Add `oncomplete="init();"` to the `<apex:actionSupport>` tag.
+3. foo
 3. Save the page.
 4. Refresh the custom Contact List page in your org.
 
