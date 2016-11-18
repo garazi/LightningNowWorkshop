@@ -1,12 +1,12 @@
 # Lightning Now Workshop
 
-##Exercise 5 – Converting a Visualforce page to a Lightning Component
+##Exercise 9 – Building a Sales Process Component
 
 ###Exercise Goals
 
-* Use SLDS markup in a Lightning Component
-* Retrieving and displaying data using Controllers
+* Build a service component
+* Explore simplified CRUD transactions with force:recordPreview
 
-###Step 1 - Create a New Lightning Component
+###Step 1 - Build the intial component structure
 
 1. Something goes here...
