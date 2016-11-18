@@ -3,15 +3,12 @@
     <div class="SLDS4VF">
         <apex:form >           
             <apex:pageBlock title="Contacts List" id="contacts_list"> 
-                <div class="slds-form slds-m-left--large slds-m-bottom--small slds-size--1-of-6">
-                    <label class="slds-form-element__label" for="select-01">Filter:</label>
-                    <div class="slds-select_container">
-                        <apex:selectList value="{! filterId }" size="1" id="select-01" styleClass="slds-select">
+                
+                    Filter:
+                        <apex:selectList value="{! filterId }" size="1">
                             <apex:selectOptions value="{! listViewOptions }"/>
                             <apex:actionSupport event="onchange" reRender="contacts_list" oncomplete="init();"/>
                         </apex:selectList>
-                    </div>
-                </div>
                 <!-- Contacts List -->                
                 <apex:pageBlockTable value="{! contacts }" var="ct">
                     <apex:column value="{! ct.FirstName }"/>
