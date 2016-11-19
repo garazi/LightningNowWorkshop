@@ -1,5 +1,0 @@
-<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global" >
-    <aura:attribute name="greeting" type="String" default="World" />
-    Hello, {!v.greeting}!
-    <ui:inputText aura:id="userInput" change="{!c.updateGreeting}"></ui:inputText>
-</aura:component>

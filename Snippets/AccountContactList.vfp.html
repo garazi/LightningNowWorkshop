@@ -1,0 +1,41 @@
+<apex:page standardController="Account" standardStylesheets="false"
+           applyHtmlTag="false" applyBodyTag="false" showHeader="false">
+    <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.SLDS4VF,'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <div class="SLDS4VF">
+        <apex:form >           
+            <apex:pageBlock id="contacts_list">                
+                <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+                    <thead>
+                        <tr class="slds-text-title--caps">
+                            <th scope="col">
+                                <div class="slds-truncate" title="First Name">First Name</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Last Name">Last Name</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Email">Email</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <apex:repeat value="{! Account.contacts }" var="ct">
+                            <tr>
+                                <th scope="row" data-label="First Name">
+                                    <div class="slds-truncate" title="{! ct.FirstName }">{! ct.FirstName }</div>
+                                </th>
+                                <td data-label="Last Name">
+                                    <div class="slds-truncate" title="{! ct.LastName }">{! ct.LastName }</div>
+                                </td>
+                                <td data-label="Email">
+                                    <div class="slds-truncate" title="{! ct.Email }">{! ct.Email }</div>
+                                </td>
+                            </tr>
+                        </apex:repeat>
+                    </tbody>
+                </table>
+            </apex:pageBlock>
+        </apex:form>
+    </div>
+    <script src="{!URLFOR($Resource.vflex)}"></script>
+    </apex:page>
