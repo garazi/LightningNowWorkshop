@@ -1,6 +1,6 @@
 # Lightning Now Workshop
 
-##Exercise 5 – Creating a Simple Lightning Component
+##Exercise 5 – Creating a "Hello World" Lightning Component
 
 ###Exercise Goals
 
@@ -17,17 +17,12 @@
 5. Save the file.
 
 ###Step 2 - Add the component to a page
-1. In the Sales app, click the Accounts tab.
-2. Filter the list to show **All Accounts**.
-3. Click on **United Oil & Gas Corp**.
-4. Choose **Edit Page** from the Setup menu.
-5. Locate your HelloWorld component in the Component List.
-6. Drag it onto the page and place it at the top of the right-hand column, above the Activity and Chatter tabs.
-7. Click the Save button.
-8. Click the Activate button.
-9. Leave the option set to **Assign this page as the default record page** and click Next.
-10. Click Save.
-11. Click the Back button in the upper righthand corner of App Builder to return to the account page.
+1. Navigate to the **United Oil & Gas Corp** page.
+2. Choose **Edit Page** from the Setup menu.
+3. Locate your HelloWorld component in the Component List.
+4. Drag it onto the page and place it at the top of the right-hand column, above the Activity and Chatter tabs.
+5. Click the Save button.
+6. Click the Back button in the upper righthand corner of App Builder to return to the account page.
 
 ###Step 3 - Understanding Lightning Component basics
 1. Replace the "Hello World" text with:
