@@ -67,4 +67,39 @@
 4. Save the file.
 
 ###Step 6 - Add Prospects as a related list
-1. 
+1. Click the Setup menu and select Setup Home.
+2. Choose the Objects and Fields > Object Manager, and select the Property object.
+3. Click the Property Layout in the Page Layouts section.
+4. Select **Related Lists** in the left-hand column of the Object Manager box.
+5. Drag **Prospect** into the Related Lists section and place it at the top.
+6. Click the wrench icon to open the Related List Properties for Prospects.
+7. Remove the ProspectAssociation from the Selected Fields list.
+8. Add Prospect:Prospect Name, Prospect:Email and Prospect:Phone to the Selected Fields list.
+9. Click OK.
+10. Click **Save** at the top of the Object Manager box and click **Yes** in the resulting dialog.
+11. Navigate back to the Property Record page you were using earlier.
+12. Test the component by filling out the form and submitting it.
+13. Click the **Related** tab to see the new Prospect.
+
+###Step 7 - Make the component a Quick Action
+1. Add `force:lightningQuickActionWithoutHeader` to the implements attribute of the QuickProspect component.
+2. Save the file.
+3. Navigate back to the Object Manager and choose the Property object.
+4. Scroll down to the Buttons, Links and Actions section.
+5. Click the New Action button.
+6. Select Lightning Component as the Actions Type.
+7. Select c:QuickProspect as the Lightning Component and set the height to 400px.
+8. Type **Quick Prospect** in the Label field and Quick_Prospect as the name.
+9. Click Save.
+10. Navigate back to Property object page and click the **Property Layout** in the Page Layouts section.
+11. Click the **override the predefined actions** link in the Salesforce1 and Lightning Experience Actions section.
+12. Click the **Salesforce1 & Lightning Actions** link in the Property Layout box.
+13. Drag the **Quick Prospect** tile to the Salesforce1 and Lightning Experience Actions section and place it as the first item.
+14. Click the Save button in the Property Layout box.
+15. Navigate back to a Property Record page.
+16. Click the Quick Prospect Quick Action button to add a new prospect.
+17. Click the Setup menu and choose **Edit Page**.
+18. Select the Quick Prospect component on the page and delete it.
+19. Click the Save button and then the Back button to return to the Property Record page.
+
+
