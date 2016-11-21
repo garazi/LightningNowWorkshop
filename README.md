@@ -12,4 +12,4 @@
 1. In the Developer Console, select **File > New > Lightning Component**.
 2. Name the bundle **BusinessLocator**.
 3. Select the **Lightning Tab**, **Lightning Page**, and **Lightning Record Page** options.
-4. Change the code in **BusinessLocator.cmp** to the following:
+4. Change the code in **BusinessLocator.cmp** to the contents of [this sample file]().
