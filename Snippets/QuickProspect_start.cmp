@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="Id" />
+    <lightning:card iconName="utility:user" title="Quick Prospect">
+        <div class="slds-text-align--left slds-p-around--medium">
+            <lightning:input aura:id="firstname" name="firstname" label="First Name" required="true" />
+        </div>
+    </lightning:card>
+</aura:component>
