@@ -28,7 +28,7 @@
         action.setCallback(this, function(response) {
             this.doLayout(response, component);
         });
-        // action.setStorable();
+        action.setStorable();
         $A.enqueueAction(action);
     },
     doLayout: function(response, component) {

@@ -11,7 +11,7 @@
 1. In the Developer Console, select **File > New > Lightning Component**.
 2. Name the bundle **BusinessLocator**.
 3. Select the **Lightning Tab**, **Lightning Page**, and **Lightning Record Page** options.
-4. Change the code in **BusinessLocator.cmp** to the contents of [this sample file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocator.cmp).
+4. Change the code in **BusinessLocator.cmp** to the contents of [this sample file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocator_start.cmp).
 5. Save the file.
 
 ###Step 2 - Add the Component to a Page

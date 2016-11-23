@@ -1,0 +1,32 @@
+<aura:component implements="force:appHostable, flexipage:availableForAllPageTypes, flexipage:availableForRecordHome, force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="Id" />
+    <aura:attribute name="defaultSearch" type="String" default="Restaurants" />
+    <aura:attribute name="location" type="Object" />
+    <aura:attribute name="restaurantList" type="Object" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div class="slds">
+        <div class="slds-box" aura:id="main">
+            <div aura:id="panelList">
+                <header>
+                    <h2 class="slds-text-heading--small slds-m-bottom--small">Business Locator</h2>
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label slds-assistive-text" for="searchBox">Search</label>
+                        <div class="slds-form-element__control">
+                            <ui:inputText aura:id="searchTerm" label="" class="field" placeholder="Search for..." change="{!c.updateSearch}" />
+                        </div>
+                    </div>
+                </header>
+                <div aura:id="scrollableArea">
+                    <ul class="slds-list--vertical slds-has-dividers--top-space">
+                        <aura:iteration items="{!v.restaurantList}" var="item" indexVar="i">
+                            <li class="slds-list__item" onclick="{!c.showDetails}" data-record="{!i}">
+                                <h3 class="slds-text-heading--small slds-m-bottom--x-small">{!item.name}</h3>
+                                <img src="{!item.ratingImg}" alt="" class="ratingStars" />
+                            </li>
+                        </aura:iteration>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>
