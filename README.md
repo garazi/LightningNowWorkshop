@@ -6,7 +6,7 @@ This repo contains all of the necessary source files for the Salesforce Lightnin
 * Create a Developer Org
 * Create a custom domain for the Developer Org
 * Enable Lightning Experience
-* Install the Dreamhouse app (for exercises 7-9)
+* Install the [Dreamhouse app](http://www.dreamhouseapp.io/installation/) (for exercises 7-9)
 
 ##Agenda
 
