@@ -14,22 +14,7 @@
 4. Change the code in **BusinessLocator.cmp** to the contents of [this sample file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocator.cmp).
 5. Save the file.
 
-###Step 2 - Restrict the page type for the component
-1. Click the Design button to add a design file to the BusinessLocator component.
-2. Replace the contents of the design file with:
-
-	```xml
-	<design:component label="Business Locator">
-    <sfdc:objects>
-        <sfdc:object>Property__c</sfdc:object>
-        <sfdc:object>Account</sfdc:object>
-        <sfdc:object>Contact</sfdc:object>
-    </sfdc:objects>
-	</design:component>
-	```
-3. Save the file.
-
-###Step 3 - Create the component Controller and Helper
+###Step 2 - Create the component Controller and Helper
 1. Click **Controller** on the right side of the Developer Console.
 2. Replace the contents of the controller with the following:
 
@@ -83,7 +68,7 @@
 8. Click **Save**.
 9. Click the **Back** link in the upper-right corner to navigate back to the Property Record page.
 	
-###Step 4 - Create the Apex Class
+###Step 3 - Create the Apex Class
 1. In the Developer Console, select **File > New > Apex Class**.
 2. Name the Apex class **BusinessLocatorApexController**.
 3. Replace the contents with the contents from [the sample file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocatorApexController.cls).
@@ -94,7 +79,7 @@
 8. Click Save.
 9. Refresh the Property Record page you used earlier.
 
-###Step 5 - Add additional styling and show details
+###Step 4 - Add additional styling and show details
 1. In the Developer Console, switch back to the BusinessLocator component and click the Style button on the right side of the window.
 2. Replace the contents with the contents of the [finished CSS file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocator.css).
 3. Update **BusinessLocatorController.js** with the following function (remember to add a comma after the **doLayout** function):
@@ -116,13 +101,21 @@
 5. Refresh the Property Record page.
 6. Click on a business listing to see details about the business.
 
-###Step 6 - Add design parameters and a custom icon
+###Step 5 - Add design parameters and a custom icon
 1. In the Developer Console, click the Design button for the BusinessLocator component on the right side of the window.
-2. Add the following to the **BusinessLocator.design** file:
+2. Replace the code with the following:
 
 	```xml
+	<design:component label="Business Locator">
+    <sfdc:objects>
+        <sfdc:object>Property__c</sfdc:object>
+        <sfdc:object>Account</sfdc:object>
+        <sfdc:object>Contact</sfdc:object>
+    </sfdc:objects>
 	<design:attribute name="defaultSearch" label="Default Search" default="Restaurants" description="What would you like to search for?" />
 	<design:attribute name="designHeight" label="Height" datasource="small,medium,large" default="small" description="How tall should the component?" />
+	</design:component>
+
 	```
 3. Save the file.
 4. Click the **SVG** button on the right side of the Dev Console window.
@@ -138,7 +131,7 @@
 8. Save the file.
 
 
-###Step 7 - Update the default search and component size
+###Step 6 - Update the default search and component size
 1. From the Property Record page, click the Setup menu and choose Edit Page.
 2. Don't worry if you receive an error, this is simply because the parameters for the design file are blank.
 3. Click the Business Locator component on the page to select it.
@@ -146,7 +139,7 @@
 5. Pick a default size from the select list.
 6. Click Save and then Back to see your updates.
 
-###Step 8 - Make the component available for Salesforce 1
+###Step 7 - Make the component available for Salesforce 1
 1. In your org, click the **Setup** icon and select **Setup Home**.
 2. In the **Quick Find** box, enter "**builder**" and select **Lightning App Builder**.
 3. Click **New** to create a Lightning Page.
@@ -157,7 +150,7 @@
 8. Update **BusinessLocatorController.js** by replacing its contents with the contents of [BusinessLocatorController](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocatorController.js).
 9. Update **BusinessLocatorHelper.js** by replacing its contents with the contents of [BusinessLocatorHelper](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocatorHelper.js).
 
-###Step 9 - Activate the App for Salesforce1
+###Step 8 - Activate the App for Salesforce1
 
 1. In Lightning App Builder, click **Save**.
 2. If you are asked to activate the app, click **Activate**. Otherwise, click the **Activation** button.
