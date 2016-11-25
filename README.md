@@ -22,8 +22,7 @@
 	</aura:component>
 	```
 	
-3. Save the file.
-4. Click the Controller button, then replace the code with:
+3. Click the Controller button, then replace the code with:
 
 	```js
 	({
@@ -41,8 +40,8 @@
 	})
 	```
 	
-5. Save the file.
-6. Create a new Apex Class with the name **GetPickListValuesController** with the following:
+
+4. Create a new Apex Class with the name **GetPickListValuesController** with the following:
 
 	```java
 	global with sharing class GetPickListValuesController {
@@ -69,7 +68,7 @@
 	}
 	```
 	
-7. Save the file.
+5. Save all the files.
 
 ###Step 2 - Build the intial component structure
 
