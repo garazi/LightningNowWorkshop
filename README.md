@@ -11,27 +11,23 @@
 1. In the Developer Console, select **File > New > Lightning Component**.
 2. Name the bundle **BusinessLocator**.
 3. Select the **Lightning Tab**, **Lightning Page**, and **Lightning Record Page** options.
-4. Change the code in **BusinessLocator.cmp** to the contents of [this sample file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocator_start.cmp).
+4. Change the code in **BusinessLocator.cmp** to the contents of [this sample file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocator.cmp).
 5. Save the file.
 
-###Step 2 - Add the Component to a Page
+###Step 2 - Restrict the page type for the component
 1. Click the Design button to add a design file to the BusinessLocator component.
 2. Replace the contents of the design file with:
 
-```xml
-<design:component label="Business Locator">
+	```xml
+	<design:component label="Business Locator">
     <sfdc:objects>
         <sfdc:object>Property__c</sfdc:object>
         <sfdc:object>Account</sfdc:object>
         <sfdc:object>Contact</sfdc:object>
     </sfdc:objects>
-</design:component>
-```
-3. In your org, navigate to a Property Record page.
-4. Click the **Setup** icon and select **Edit Page**.
-5. Drag the **BusinessLocator** component from the Lightning Components list and place it on the page at the top of the right column.
-6. Click **Save**.
-7. Click the **Back** link in the upper-right corner to navigate back to the Property Record page.
+	</design:component>
+	```
+3. Save the file.
 
 ###Step 3 - Create the component Controller and Helper
 1. Click **Controller** on the right side of the Developer Console.
@@ -80,6 +76,12 @@
     }
 	})
 	```
+	
+5. In your org, navigate to a Property Record page.
+6. Click the **Setup** icon and select **Edit Page**.
+7. Drag the **BusinessLocator** component from the Lightning Components list and place it on the page at the top of the right column.
+8. Click **Save**.
+9. Click the **Back** link in the upper-right corner to navigate back to the Property Record page.
 	
 ###Step 4 - Create the Apex Class
 1. In the Developer Console, select **File > New > Apex Class**.
