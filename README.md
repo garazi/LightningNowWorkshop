@@ -18,7 +18,7 @@
 1. In the Dev Console, create a new Lightning Component.
 2. Give the component the name **QuickProspect**.
 3. Check Lightning Record Page.
-4. Replace the contents of your component with [QuickProspect_start](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-1/Snippets/QuickProspect_start.cmp).
+4. Replace the contents of your component with [QuickProspect_start](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-7/Snippets/QuickProspect_start.cmp).
 5. Add another `<lightning:input>` element for last name with a minimum length of 2, `minlength=2`.
 6. Add two more inputs for the email and phone:
 
@@ -40,13 +40,13 @@
 
 ###Step 3 - Add a Component Controller
 1. Click the Controller button in the Dev Console.
-2. Replace the contents of the controller with the contents of [QuickProspectController](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-1/Snippets/QuickProspectController.js).
+2. Replace the contents of the controller with the contents of [QuickProspectController](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-7/Snippets/QuickProspectController.js).
 3. Save the file.
 
 ###Step 4 - Create the Apex Controller
 1. In the Dev Console, create a new Apex Class, **File > New > Apex Class**.
 2. Give it a name of **QuickProspectApexController**.
-3. Replace the contents with the contents of [QuickProspectApexController](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-1/Snippets/QuickProspectApexController.cls).
+3. Replace the contents with the contents of [QuickProspectApexController](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-7/Snippets/QuickProspectApexController.cls).
 4. Save the file.
 5. Add a reference to the Apex controller in the `<aura:component>` tag in QuickProspect.cmp. `controller="QuickProspectApexController"`
 6. Save the file.
