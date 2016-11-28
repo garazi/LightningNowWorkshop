@@ -12,14 +12,14 @@
 1. Click the App Launcher and choose the Dreamhouse app.
 2. In another browser tab, [navigate to this page](https://github.com/garazi/prospectObject).
 3. Import two custom objects by clicking the **Deploy to Salesforce** button.
-4. After the deployment completes, confirm that the Prospect custom object is there by navigating to **Setup Home > Objects and Fields > Object Manager**.
+4. After the deployment completes, confirm that the **Prospect** custom object is there by navigating to **Setup Home > Objects and Fields > Object Manager**.
 
 ###Step 2 - Create the QuickProspect component
 1. In the Dev Console, create a new Lightning Component.
 2. Give the component the name **QuickProspect**.
 3. Check Lightning Record Page.
 4. Replace the contents of your component with [QuickProspect_start](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-7/Snippets/QuickProspect_start.cmp).
-5. Add another `<lightning:input>` element for last name with a minimum length of 2, `minlength=2`.
+5. Add another `<lightning:input>` element for last name with a minimum length of 2, `minlength="2"`.
 6. Add two more inputs for the email and phone:
 
 ```html
@@ -52,19 +52,18 @@
 6. Save the file.
 
 ###Step 5 - Limit the pages the component can be used on
-1. In the Dev Console, switch back to your QuickProspect component.
-2. Click the Design button on the right-hand side of the console.
-3. Replace the contents of the file with:
+1. In the Dev Console, click the Design button on the right-hand side of the console.
+2. Replace the contents of the file with:
 
 ```xml
 <design:component>
-<sfdc:objects>
+    <sfdc:objects>
         <sfdc:object>Property__c</sfdc:object>
     </sfdc:objects>
 </design:component>
 ```
 
-4. Save the file.
+3. Save the file.
 
 ###Step 6 - Add Prospects as a related list
 1. Click the Setup menu and select Setup Home.
@@ -74,7 +73,7 @@
 5. Drag **Prospect** into the Related Lists section and place it at the top.
 6. Click the wrench icon to open the Related List Properties for Prospects.
 7. Remove the ProspectAssociation from the Selected Fields list.
-8. Add Prospect:Prospect Name, Prospect:Email and Prospect:Phone to the Selected Fields list.
+8. Add Prospect: First Name, Prospect: Last Name, Prospect: Email and Prospect: Phone to the Selected Fields list.
 9. Click OK.
 10. Click **Save** at the top of the Object Manager box and click **Yes** in the resulting dialog.
 11. Navigate back to the Property Record page you were using earlier.
@@ -99,7 +98,5 @@
 15. Navigate back to a Property Record page.
 16. Click the Quick Prospect Quick Action button to add a new prospect.
 17. Click the Setup menu and choose **Edit Page**.
-18. Select the Quick Prospect component on the page and delete it.
+18. Select the Quick Prospect component on the right-hand column of the page and delete it.
 19. Click the Save button and then the Back button to return to the Property Record page.
-
-
