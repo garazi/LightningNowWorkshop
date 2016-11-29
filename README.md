@@ -12,7 +12,6 @@
 2. Name the bundle **BusinessLocator**.
 3. Select the **Lightning Tab**, **Lightning Page**, and **Lightning Record Page** options.
 4. Change the code in **BusinessLocator.cmp** to the contents of [this sample file](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-8/Snippets/BusinessLocator.cmp).
-5. Save the file.
 
 ###Step 2 - Create the component Controller and Helper
 1. Click **Controller** on the right side of the Developer Console.
@@ -62,12 +61,6 @@
 	})
 	```
 	
-5. In your org, navigate to a Property Record page.
-6. Click the **Setup** icon and select **Edit Page**.
-7. Drag the **BusinessLocator** component from the Lightning Components list and place it on the page at the top of the right column.
-8. Click **Save**.
-9. Click the **Back** link in the upper-right corner to navigate back to the Property Record page.
-	
 ###Step 3 - Create the Apex Class
 1. In the Developer Console, select **File > New > Apex Class**.
 2. Name the Apex class **BusinessLocatorApexController**.
@@ -76,8 +69,13 @@
 5. Click the **Setup Home** icon in your Salesforce org, and enter **remote** in the Quick Find field.
 6. Click **Remote Site Settings**, and then click **New Remote Site**.
 7. Name the remote site **BusinessLocator**, and add the URL from the Apex class. Add the URL including the **.com**, but you don't need to add the rest of the URL.
-8. Click Save.
-9. Refresh the Property Record page you used earlier.
+8. Save all the files.
+9. In your org, navigate to a Property Record page.
+10. Click the **Setup** icon and select **Edit Page**.
+11. Drag the **BusinessLocator** component from the Lightning Components list and place it on the page at the top of the right column.
+12. Click **Save**.
+13. Click the **Back** link in the upper-right corner to navigate back to the Property Record page.
+14. Refresh the Property Record page you used earlier.
 
 ###Step 4 - Add additional styling and show details
 1. In the Developer Console, switch back to the BusinessLocator component and click the Style button on the right side of the window.
