@@ -37,7 +37,7 @@
 		standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" showHeader="false"
 
 ###Step 4 - Add a custom JavaScript as a static resource
-1. Save vflex.js to your computer.
+1. Save [**vflex.js**](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-2/Snippets/vflex.js) to your computer.
 2. In Setup Home, navigate to the Static Resources section.
 3. Click the **New** button to create a new static resource.
 4. Give the resource a name of **vflex**.
