@@ -1,3 +1,7 @@
+/* THIS SCRIPT IS FOR DEMONSTRATION PURPOSES ONLY, */
+/* AND IS OFFERED AS IS, WITHOUT ANY EXPECTATION OF SUPPORT */
+/* ON THE PART OF SALESFORCE, SALESFORCE EMPLOYEES OR PARTNERS */
+
 function addClass(oldClass, newClass) {
     var elements = document.getElementsByClassName(oldClass);
     for (var i = 0; i < elements.length; i++) {
