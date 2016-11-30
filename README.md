@@ -68,7 +68,7 @@
 4. In the BusinessLocator.cmp file, add a reference to the Apex Controller `controller="BusinessLocatorApexController"` in the `<aura:component>` tag. 
 5. Click the **Setup Home** icon in your Salesforce org, and enter **remote** in the Quick Find field.
 6. Click **Remote Site Settings**, and then click **New Remote Site**.
-7. Name the remote site **BusinessLocator**, and add the URL from the Apex class. Add the URL including the **.com**, but you don't need to add the rest of the URL.
+7. Name the remote site **BusinessLocator**, and add the URL for the remote HTTP call `https://grewis-yelp.herokuapp.com/` from the Apex class. Add the URL including the **.com**, but you don't need to add the rest of the URL.
 8. Save all the files.
 9. In your org, navigate to a Property Record page.
 10. Click the **Setup** icon and select **Edit Page**.
