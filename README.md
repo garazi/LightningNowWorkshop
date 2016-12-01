@@ -22,16 +22,16 @@
 5. Add another `<lightning:input>` element for last name with a minimum length of 2, `minlength="2"`.
 6. Add two more inputs for the email and phone:
 
-```html
-<lightning:input aura:id="email" name="email" label="Email" type="email" messageWhenTypeMismatch="Your entry must be a valid email address." />
-<lightning:input aura:id="phone" type="tel" label="Phone" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-```
+    ```html
+    <lightning:input aura:id="email" name="email" label="Email" type="email" messageWhenTypeMismatch="Your entry must be a valid email address." />
+    <lightning:input aura:id="phone" type="tel" label="Phone" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+    ```
 
 7. Add a submit button:
 
-```html
-<lightning:button class="slds-m-top--small" variant="brand" aura:id="submitBtn" label="Submit" onclick="{!c.handleSaveProspect}" />
-```
+    ```html
+    <lightning:button class="slds-m-top--small" variant="brand" aura:id="submitBtn" label="Submit" onclick="{!c.handleSaveProspect}" />
+    ```
 
 8. In the Dreamhouse app, click the Properties tab, then click any property.
 9. Choose Edit Page from the Setup menu.
@@ -55,13 +55,13 @@
 1. In the Dev Console, click the Design button on the right-hand side of the console.
 2. Replace the contents of the file with:
 
-```xml
-<design:component>
-    <sfdc:objects>
-        <sfdc:object>Property__c</sfdc:object>
-    </sfdc:objects>
-</design:component>
-```
+    ```xml
+    <design:component>
+        <sfdc:objects>
+            <sfdc:object>Property__c</sfdc:object>
+        </sfdc:objects>
+    </design:component>
+    ```
 
 3. Save the file.
 
