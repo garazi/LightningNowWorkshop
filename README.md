@@ -36,7 +36,7 @@
 17. Notice that the default Contacts Related List is not present.
 18. Click the **Details** tab and scroll down to see your new Account Contacts section.
 
-###Step 3 - Make a Visualforce page available for Lightning pages
+###Step 3 - Make a Visualforce page available as a component for Lightning pages
 1. Click the Setup menu and choose **Setup Home**.
 2. In the Quick Find, type "visualforce".
 3. Click **Visualforce Pages**.
