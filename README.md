@@ -25,16 +25,16 @@
 6. Click the Back button in the upper righthand corner of App Builder to return to the account page.
 
 ###Step 3 - Understanding Lightning Component basics
-1. Replace the "Hello World" text with:
+1. In the Developer Console, replace the "Hello World" text with:
 
 		<aura:attribute name="greeting" type="String" default="World" />
     	Hello, {!v.greeting}!
-    	
+
 2. Save and reload the account page.
-3. Add the following on a new line:
+3. Add the following on a new line under the `<aura:attribute/>` tag:
 
 		<ui:inputText aura:id="userInput" change="{!c.updateGreeting}"></ui:inputText>
-		
+
 4. Click the Controller button on the right-hand side of the Dev Console.
 5. Replace the Controller's contents with:
 
