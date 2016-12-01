@@ -26,23 +26,16 @@
 3. Check Lightning Record Page.
 4. Replace the contents of your component with [QuickProspect_start](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-7/Snippets/QuickProspect_start.cmp).
 5. Add another `<lightning:input>` element for last name with a minimum length of 2, `minlength="2"`.
-6. Add two more inputs for the email and phone:
+6. Add two more inputs for the email and phone, and a submit button:
 
     ```html
     <lightning:input aura:id="email" name="email" label="Email" type="email" messageWhenTypeMismatch="Your entry must be a valid email address." />
     <lightning:input aura:id="phone" type="tel" label="Phone" name="phone" placeholder="XXX-XXX-XXXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
-    ```
-
-7. Add a submit button:
-
-    ```html
     <lightning:button class="slds-m-top--small" variant="brand" aura:id="submitBtn" label="Submit" onclick="{!c.handleSaveProspect}" />
+
     ```
 
-8. In the Dreamhouse app, click the Properties tab, then click any property.
-9. Choose Edit Page from the Setup menu.
-10. Locate the QuickProspect component, and drag it onto the page, placing it at the top of the right-hand column.
-11. Click the Save button, and then click the Back button to return to the Property listing.
+7. Save the component file.
 
 ###Step 3 - Add a Component Controller
 1. Click the Controller button in the Dev Console.
@@ -93,7 +86,7 @@
 4. Scroll down to the Buttons, Links and Actions section.
 5. Click the New Action button.
 6. Select Lightning Component as the Actions Type.
-7. Select c:QuickProspect as the Lightning Component and set the height to 400px.
+7. Select **c:QuickProspect** as the Lightning Component and set the height to 400px.
 8. Type **Quick Prospect** in the Label field and Quick_Prospect as the name.
 9. Click Save.
 10. Navigate back to Property object page and click the **Property Layout** in the Page Layouts section.
