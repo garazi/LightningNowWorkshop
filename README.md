@@ -24,7 +24,10 @@
 7. Choose an icon for the Tab Style (your choice).
 8. Click Next and Next and then Save.
 9. Refresh the page, then click the tab for your new page.
+10. Switch the filter to "All Contacts"
 
 ###Step 3 - View the Visualforce page in Lightning Experience
 1. Switch to Lightning Experience.
-2. Click your Contact List tab.
+2. Click on the AppLauncher icon (9 dots) on the upper left
+3. Under "All Items", locate your Contact List and click on it
+4. Switch the filter to "All Contacts"
