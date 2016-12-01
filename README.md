@@ -13,6 +13,12 @@
 2. In another browser tab, [navigate to this page](https://github.com/garazi/prospectObject).
 3. Import two custom objects by clicking the **Deploy to Salesforce** button.
 4. After the deployment completes, confirm that the Prospect custom object is there by navigating to **Setup Home > Objects and Fields > Object Manager**.
+5. In the Quick Find, enter **field** and click on **Security > Field Accessibility**.
+6. Click on **Prospect** in the list.
+7. Click **View by Fields** and select **First Name** from the pop-up menu.
+8. Click the **Hidden** link for System Administrator.
+9. Click the **Visible** checkbox in the Field-Level Security section.
+10. Repeat steps 7-9 for **Last Name**, **Email** and **Phone**.
 
 ###Step 2 - Create the QuickProspect component
 1. In the Dev Console, create a new Lightning Component.
