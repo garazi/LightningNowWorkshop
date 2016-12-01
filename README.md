@@ -17,7 +17,7 @@
 6. Click on **Prospect** in the list.
 7. Click **View by Fields** and select **First Name** from the pop-up menu.
 8. Click the **Hidden** link for System Administrator.
-9. Click the **Visible** checkbox in the Field-Level Security section.
+9. Click the **Visible** checkbox in the Field-Level Security section, then click Save.
 10. Repeat steps 7-9 for **Last Name**, **Email** and **Phone**.
 
 ###Step 2 - Create the QuickProspect component
