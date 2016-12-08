@@ -30,18 +30,35 @@
 
 10. Remove the `<apex:pageBlockTable>`.
 
-###Step 3 - Add SLDS styling to the apex:selectList
-1. Wrap the word "Filter" and the `<apex:selectList>` with:
+###Step 3 - Adding more SLDS styling
+1. Wrap the **contents** of the `<apex:pageBlock>` with:
+
+		```html
+		<div class="slds-card">
+		```
+2. Remove `title="Contact List"` from the `<apex:pageBlock>`.
+3. Add the following after the opening `<div class="slds-card">` tag:
+
+		```html
+		<div class="slds-card__header">                    
+                        <h2 class="slds-text-heading--small">
+                            Contacts List
+                        </h2> 
+                </div>
+		```
+
+4. Wrap the word "Filter" and the `<apex:selectList>` with:
 
 		<div class="slds-form slds-m-left--large slds-m-bottom--small slds-size--1-of-6"> ... </div>
 
-2. Wrap the word "Filter" with:
+5. Wrap the word "Filter" with:
 
 		<label class="slds-form-element__label"> ... </label>
 
-3. Wrap the `<apex:selectList>` with:
+6. Wrap the `<apex:selectList>` with:
 
 		<div class="slds-select_container"> ... </div>
 
-4. Add `styleClass="slds-select"` to the `<apex:selectList>` tag.
-5. Save the page and reload the **Contact List** tab in your org.
+7. Add `styleClass="slds-select"` to the `<apex:selectList>` tag.
+8. Remove the `<script>` tag from the bottom of the page.
+9. Save the page and reload the **Contact List** tab in your org.
