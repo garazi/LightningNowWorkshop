@@ -60,5 +60,5 @@
 		<div class="slds-select_container"> ... </div>
 
 7. Add `styleClass="slds-select"` to the `<apex:selectList>` tag.
-8. Remove the `<script>` tag from the bottom of the page.
+8. Remove the `<script>` tag from the bottom of the page and remove the `oncomplete="init()" from the `<apex:actionSupport>` tag.
 9. Save the page and reload the **Contact List** tab in your org.
