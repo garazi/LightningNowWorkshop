@@ -1,0 +1,6 @@
+<aura:component controller="UserSelect" implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="greeting" type="String" default="World" />
+    Hello, {!v.greeting}!
+    <ui:inputText aura:id="userInput" change="{!c.updateGreeting}"></ui:inputText>
+</aura:component>
