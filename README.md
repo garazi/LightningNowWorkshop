@@ -47,4 +47,43 @@
 
 6. Save the Controller file and the Component.
 7. Refresh the account page.
-8. Type your name in the input and press Tab or Return.
+8. Type a name in the input and press Tab or Return.
+
+###Step 4 - Pulling data from Salesforce
+1. In the Developer Console, choose **File > New > Apex Class**. Name the file **UserSelect**.
+2. Add the following code to the class:
+
+	```java
+		    @AuraEnabled
+    		public static User getCurrentUser() {
+        		User toReturn = [SELECT Id, FirstName, LastName FROM User WHERE Id = :UserInfo.getUserId() LIMIT 1];
+        		return toReturn;
+    		}
+    ```
+3. Add a reference to the Apex Class in HelloWorld.cmp by adding `controller="UserSelect"` to the `<aura:component>` tag.
+4. Add a handler to fire when the component is initialized on the page, by adding the following after the opening `<apex:component> tag:
+	```html
+		<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	```
+5. Update the **HelloWorldController.js** file with the following code:
+
+	```js
+		({
+    		doInit : function(component, event, helper) {
+        	var action = component.get("c.getCurrentUser");
+        	action.setCallback(this, function(response) {
+            var data = response.getReturnValue();
+            console.log("foo: ", data);
+            component.set("v.greeting", data.FirstName);
+        	})
+        	$A.enqueueAction(action);
+    	},
+			updateGreeting : function(component, event, helper) {
+				var newGreeting = component.find("userInput").get("v.value");
+        		component.set("v.greeting", newGreeting);
+			}
+		})
+		```
+		
+6. Save all the files.
+7. Refresh the **United Oil & Gas Corp** page.
