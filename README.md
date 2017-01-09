@@ -16,7 +16,7 @@
 5. Copy the markup for the Basic Data Table.
 
 ###Step 2 - Update the Visualforce markup
-1. Paste the markup into the Visualforce page just before the closing `</apex:pageBlock>` tag. 
+1. Paste the markup into the Visualforce page just before the closing `</apex:page>` tag. 
 2. Delete the second `<tr>` block in the `<tbody>`.
 3. Change the title and text of each `<th>` in the `<thead>` to match the four columns of the `<apex:column>` elements.
 4. Delete the remaining 3 `<th>` elements.
@@ -28,10 +28,17 @@
 
 		<apex:repeat value="{! contacts }" var="ct"> ... </apex:repeat>
 
-10. Remove the `<apex:pageBlockTable>`.
 
 ###Step 3 - Add SLDS styling to the apex:selectList
-1. Wrap the word "Filter" and the `<apex:selectList>` with:
+1. Insert the following after the closing `</apex:form>` tag:
+
+	```html
+	<link rel="stylesheet" 
+         type="text/css" 
+         href="{!URLFOR($Resource.SLDS4VF,'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+    <div class="SLDS4VF">
+	```
+
 
 		<div class="slds-form slds-m-left--large slds-m-bottom--small slds-size--1-of-6"> ... </div>
 		
