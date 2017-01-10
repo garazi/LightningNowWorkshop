@@ -1,66 +1,86 @@
-<apex:page standardController="Contact" recordSetVar="contacts" standardStylesheets="false"
-           applyHtmlTag="false" applyBodyTag="false" showHeader="false">
-    <link rel="stylesheet" 
-          type="text/css" 
-          href="{!URLFOR($Resource.SLDS4VF,'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+<apex:page standardController="Contact" recordSetVar="contacts" standardStylesheets="false" applyBodyTag="false">
+    <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed == 'Theme4d'}" />
+    
     <div class="SLDS4VF">
-        <apex:form >           
-            <apex:pageBlock id="contacts_list">
-                <div class="slds-card">
-                    <div class="slds-card__header">                    
-                        <h2 class="slds-text-heading--small">
-                            Contacts List
-                        </h2> 
-                    </div>
-                    <div class="slds-form slds-m-left--large slds-m-bottom--small slds-size--1-of-6">
-                        <label class="slds-form-element__label" for="select-01">Filter:</label>
-                        <div class="slds-select_container">
-                            <apex:selectList value="{! filterId }" size="1" id="select-01" styleClass="slds-select">
-                                <apex:selectOptions value="{! listViewOptions }"/>
-                                <apex:actionSupport event="onchange" reRender="contacts_list" oncomplete="init();"/>
-                            </apex:selectList>
-                        </div>
-                    </div>
-                    
+        <apex:outputPanel rendered="{! !lightningDesktop}">
+            <link class="user" href="/sCSS/38.0/sprites/1245343872000/Theme3/default/elements.css" rel="stylesheet" type="text/css" />
+            <link  href="/sCSS/38.0/sprites/1251310209000/Theme3/dStandard.css" rel="stylesheet" type="text/css" />
+            <apex:form>           
+                <apex:pageBlock title="Contacts List" id="contacts_list">
+                    <apex:outputLabel value="Filter: " for="filterList" />
+                    <apex:selectList value="{! filterId }" size="1" id="filterList">
+                        <apex:selectOptions value="{! listViewOptions }"/>
+                        <apex:actionSupport event="onchange" reRender="contacts_list" oncomplete="init();"/>
+                    </apex:selectList>
                     <!-- Contacts List -->                
-                    <table class="slds-table slds-table--bordered slds-table--cell-buffer">
-                        <thead>
-                            <tr class="slds-text-title--caps">
-                                <th scope="col">
-                                    <div class="slds-truncate" title="First Name">First Name</div>
-                                </th>
-                                <th scope="col">
-                                    <div class="slds-truncate" title="Last Name">Last Name</div>
-                                </th>
-                                <th scope="col">
-                                    <div class="slds-truncate" title="Email">Email</div>
-                                </th>
-                                <th scope="col">
-                                    <div class="slds-truncate" title="Account Name">Account Name</div>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <apex:repeat value="{! contacts }" var="ct">
-                                <tr>
-                                    <th scope="row" data-label="First Name">
-                                        <div class="slds-truncate" title="{! ct.FirstName }">{! ct.FirstName }</div>
+                    <apex:pageBlockTable value="{! contacts }" var="ct">
+                        <apex:column value="{! ct.FirstName }"/>
+                        <apex:column value="{! ct.LastName }"/>
+                        <apex:column value="{! ct.Email }"/>
+                        <apex:column value="{! ct.Account.Name }"/>
+                    </apex:pageBlockTable>
+                </apex:pageBlock>           
+            </apex:form>
+        </apex:outputPanel>
+        <apex:outputPanel rendered="{! lightningDesktop}">
+            <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.SLDS4VF,'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+            <apex:form >           
+                <apex:pageBlock id="contacts_list">
+                    <div class="slds-card">
+                        <div class="slds-card__header">                    
+                            <h2 class="slds-text-heading--small">
+                                Contacts List
+                            </h2> 
+                        </div>
+                        <div class="slds-form slds-m-left--large slds-m-bottom--small slds-size--1-of-6">
+                            <apex:outputLabel value="Filter: " for="filterList" styleClass="slds-form-element__label" />
+                            <div class="slds-select_container">
+                                <apex:selectList value="{! filterId }" size="1" id="filterList" styleClass="slds-select">
+                                    <apex:selectOptions value="{! listViewOptions }"/>
+                                    <apex:actionSupport event="onchange" reRender="contacts_list"/>
+                                </apex:selectList>
+                            </div>
+                        </div>
+                        <!-- Contacts List -->                
+                        <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+                            <thead>
+                                <tr class="slds-text-title--caps">
+                                    <th scope="col">
+                                        <div class="slds-truncate" title="First Name">First Name</div>
                                     </th>
-                                    <td data-label="Last Name">
-                                        <div class="slds-truncate" title="{! ct.LastName }">{! ct.LastName }</div>
-                                    </td>
-                                    <td data-label="Email">
-                                        <div class="slds-truncate" title="{! ct.Email }">{! ct.Email }</div>
-                                    </td>
-                                    <td data-label="Account">
-                                        <div class="slds-truncate" title="{! ct.Account.Name }">{! ct.Account.Name }</div>
-                                    </td>
+                                    <th scope="col">
+                                        <div class="slds-truncate" title="Last Name">Last Name</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="slds-truncate" title="Email">Email</div>
+                                    </th>
+                                    <th scope="col">
+                                        <div class="slds-truncate" title="Account Name">Account Name</div>
+                                    </th>
                                 </tr>
-                            </apex:repeat>
-                        </tbody>
-                    </table>
-                </div>
-            </apex:pageBlock>
-        </apex:form>
+                            </thead>
+                            <tbody>
+                                <apex:repeat value="{! contacts }" var="ct">
+                                    <tr>
+                                        <th scope="row" data-label="First Name">
+                                            <div class="slds-truncate" title="{! ct.FirstName }">{! ct.FirstName }</div>
+                                        </th>
+                                        <td data-label="Last Name">
+                                            <div class="slds-truncate" title="{! ct.LastName }">{! ct.LastName }</div>
+                                        </td>
+                                        <td data-label="Email">
+                                            <div class="slds-truncate" title="{! ct.Email }">{! ct.Email }</div>
+                                        </td>
+                                        <td data-label="Account">
+                                            <div class="slds-truncate" title="{! ct.Account.Name }">{! ct.Account.Name }</div>
+                                        </td>
+                                    </tr>
+                                </apex:repeat>
+                            </tbody>
+                        </table>
+                    </div>
+                </apex:pageBlock>           
+            </apex:form>
+        </apex:outputPanel>
     </div>
 </apex:page>
