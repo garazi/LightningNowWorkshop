@@ -2,6 +2,8 @@
 
 This repo contains all of the necessary source files for the Salesforce Lightning Now hands-on workshop. 
 
+**NOTE:** The exercises have been updated using features from the **Spring '17** release. 
+
 ####Prerequisites:
 * Create a Developer Org
 * Create a custom domain for the Developer Org
