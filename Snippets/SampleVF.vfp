@@ -1,9 +1,8 @@
-<apex:page standardController="Contact" recordSetVar="contacts" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" showHeader="false">
-    <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.SLDS4VF,'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-    <div class="SLDS4VF">
+<apex:page standardController="Contact" recordSetVar="contacts" standardStylesheets="false"  applyBodyTag="false">
+    <apex:slds />
+    <div class="slds-scope">
         <apex:form >           
-            <apex:pageBlock title="Contacts List" id="contacts_list"> 
-                
+            <apex:pageBlock title="Contacts List" id="contacts_list">                
                     Filter:
                         <apex:selectList value="{! filterId }" size="1">
                             <apex:selectOptions value="{! listViewOptions }"/>
