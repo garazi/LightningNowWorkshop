@@ -34,7 +34,7 @@
 		
 3. Add the following to the `<apex:page>` tag:
 
-		standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" showHeader="false"
+		standardStylesheets="false" applyBodyTag="false"
 
 ###Step 4 - Add a custom JavaScript as a static resource
 1. Save [**vflex.js**](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-2/Snippets/vflex.js) to your computer.
