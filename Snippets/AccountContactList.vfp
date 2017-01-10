@@ -1,5 +1,4 @@
-<apex:page standardController="Account" standardStylesheets="false"
-           applyHtmlTag="false" applyBodyTag="false" showHeader="false">
+<apex:page standardController="Account" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" showHeader="false">
     <apex:slds />
     <div class="slds-scope">
         <apex:form >           
