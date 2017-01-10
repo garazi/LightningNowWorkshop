@@ -1,6 +1,5 @@
 <apex:page standardController="Contact" recordSetVar="contacts" standardStylesheets="false" applyBodyTag="false">
     <apex:variable var="lightningDesktop" value="{! $User.UIThemeDisplayed == 'Theme4d'}" />
-    
     <div class="slds-scope">
         <apex:outputPanel rendered="{! !lightningDesktop}">
             <link class="user" href="/sCSS/38.0/sprites/1245343872000/Theme3/default/elements.css" rel="stylesheet" type="text/css" />
