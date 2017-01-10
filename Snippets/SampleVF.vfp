@@ -1,6 +1,6 @@
 <apex:page standardController="Contact" recordSetVar="contacts" standardStylesheets="false"  applyBodyTag="false">
     <apex:slds />
-    <div class="SLDS4VF slds-scope">
+    <div class="slds-scope">
         <apex:form>           
                 <apex:pageBlock title="Contacts List" id="contacts_list">
                     <apex:outputLabel value="Filter: " for="filterList" />
