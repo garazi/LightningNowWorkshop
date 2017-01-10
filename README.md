@@ -25,7 +25,7 @@
 		
 		</apex:outputPanel>
 		
-5. Move the `<link>` tag that references the SLDS static resource inside the new `<apex:outputPanel>` that you just created.
+5. Move the `<apex:slds />` tag that includes the SLDS CSS inside the new `<apex:outputPanel>` that you just created.
 6. Add a reference to the Classic stylesheets on a new line in the **first** `<apex:outputPanel>`:
 
 	```html
@@ -33,7 +33,7 @@
         <link  href="/sCSS/38.0/sprites/1251310209000/Theme3/dStandard.css" rel="stylesheet" type="text/css" />
     ```
     
-7. Copy the entire `<apex:form>` and paste it after the `<link>` tag in the **second** `<apex:outputPanel>`.
+7. **Copy** the entire `<apex:form>` and paste it after the `<apex:slds />` tag in the **second** `<apex:outputPanel>`.
 8. Save the page.
 
 ###Step 2 - Explore the Salesforce Lightning Design System
