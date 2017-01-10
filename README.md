@@ -2,7 +2,7 @@
 
 ##Exercise 1 – Adding a Visualforce page to Lightning Experience
 
-###Exercise Goals
+###Exercise Goalsz
 
 * Create a Visualforce page using the Developer Console
 * Enable the Visualforce page in Lightning Experience
