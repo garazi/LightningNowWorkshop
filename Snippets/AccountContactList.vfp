@@ -1,7 +1,7 @@
 <apex:page standardController="Account" standardStylesheets="false"
            applyHtmlTag="false" applyBodyTag="false" showHeader="false">
-    <link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.SLDS4VF,'assets/styles/salesforce-lightning-design-system-vf.css')}" />
-    <div class="SLDS4VF">
+    <apex:slds />
+    <div class="slds-scope">
         <apex:form >           
             <apex:pageBlock id="contacts_list">                
                 <table class="slds-table slds-table--bordered slds-table--cell-buffer">
@@ -37,5 +37,4 @@
             </apex:pageBlock>
         </apex:form>
     </div>
-    <script src="{!URLFOR($Resource.vflex)}"></script>
-    </apex:page>
+</apex:page>
