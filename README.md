@@ -8,7 +8,7 @@
 * Adding a Visualforce page to an existing Lightning Record Home page
 
 ###Step 1 - Create a custom Visualforce page
-1. Open AccountContactList.vfp and copy its contents.
+1. Open [AccountContactList.vfp](https://raw.githubusercontent.com/garazi/LightningNowWorkshop/exercise-4/Snippets/AccountContactList.vfp) and copy its contents.
 2. In the Dev Console, click **File > New > Visualforce Page**.
 3. Name the page **AccountContactList**.
 4. Replace the contents of the page with the contents that you copied.
