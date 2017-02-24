@@ -15,5 +15,4 @@
             </apex:pageBlockTable>
         </apex:pageBlock>
     </apex:form>
-    </div>
 </apex:page>
