@@ -13,7 +13,8 @@
 1. In the Developer Console, choose **New > Lightning Component**.
 2. Give the component a name of **HelloWorld**.
 3. Check the option **Lightning Record Page**.
-4. Add "Hello World" to the component.
+4. Click the Submit button.
+4. Add "Hello World" to the component on line 2.
 5. Save the file.
 
 ###Step 2 - Add the component to a page
@@ -61,7 +62,8 @@
     		}
     ```
 3. Add a reference to the Apex Class in HelloWorld.cmp by adding `controller="UserSelect"` to the `<aura:component>` tag.
-4. Add a handler to fire when the component is initialized on the page, by adding the following after the opening `<apex:component> tag:
+4. Add a handler to fire when the component is initialized on the page, by adding the following after the opening `<apex:component>` tag:
+
 	```html
 		<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
 	```
@@ -83,7 +85,7 @@
         		component.set("v.greeting", newGreeting);
 			}
 		})
-		```
+	```
 		
 6. Save all the files.
 7. Refresh the **United Oil & Gas Corp** page.
